@@ -61,6 +61,13 @@ RIP is a **distance-vector Interior Gateway Protocol (IGP)** that uses "routing 
 R1(config)# router rip
 R1(config-router)# version 2
 ```
+- no auto-summary command
+```shell
+R1(config-router)#no auto-summary 
+```
+The no auto-summary command in Cisco routing protocols like EIGRP and RIP disables automatic 
+summarization of subnet routes to their classful network boundary. By default, 
+these protocols summarize routes at the boundary of major networks, but this behavior can be disabled using no auto-summary. 
 
 - network command
 ```shell
